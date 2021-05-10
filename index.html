@@ -374,26 +374,9 @@ function getMonday(d) {
 }
 
 
-
-```r
-latest_date <- as.character(date)
-
-
-
-cat(paste0("function getURL(report, country) { \n",
-           "var str = 'reports/'; \n", 
-           "str = str.concat(report, '-report-', ", latest_date, "); \n", 
-           "if (!(report === 'ensemble')) { \n", 
-           "  str = str.concat('-', country); \n", 
-           "} \n", 
-           "str = str.concat('.html'); \n", 
-           "return(str); \n",
-           "}"))
-```
-
 function getURL(report, country) { 
 var str = 'reports/'; 
-str = str.concat(report, '-report-', 2021-05-10); 
+str = str.concat(report, '-report-', '2021-05-10'); 
 if (!(report === 'ensemble')) { 
   str = str.concat('-', country); 
 } 
